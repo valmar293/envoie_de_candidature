@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+#addBtn {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#formSection {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#cardsContainer {
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 6px solid #4a90e2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.statut-envoyée { border-left-color: #4a90e2; }
+.statut-attente { border-left-color: #9e9e9e; }
+.statut-relancée { border-left-color: #f5a623; }
+.statut-entretien { border-left-color: #7ed321; }
+.statut-refusée { border-left-color: #d0021b; }
+
+.card button {
+    margin-right: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background: #d0021b;
+    color: white;
+}
+
+.btn-edit {
+    background: #4a90e2;
+    color: white;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Suivi des Candidatures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Suivi des Candidatures</h1>
+    <button id="addBtn">+ Ajouter une candidature</button>
+</header>
+
+<section id="formSection" class="hidden">
+    <h2>Nouvelle candidature</h2>
+
+    <form id="candidatureForm">
+        <input type="text" id="entreprise" placeholder="Entreprise" required>
+        <input type="text" id="poste" placeholder="Poste" required>
+        <input type="text" id="lieu" placeholder="Lieu">
+
+        <select id="typeCandidature">
+            <option value="spontanée">Candidature spontanée</option>
+            <option value="offre">Réponse à une offre</option>
+        </select>
+
+        <select id="contrat">
+            <option value="CDI">CDI</option>
+            <option value="CDD">CDD</option>
+            <option value="Intérim">Intérim</option>
+            <option value="Saisonnier">Saisonnier</option>
+            <option value="Autre">Autre</option>
+        </select>
+
+        <input type="date" id="dateEnvoi">
+
+        <select id="statut">
+            <option value="envoyée">Envoyée</option>
+            <option value="attente">En attente</option>
+            <option value="relancée">Relancée</option>
+            <option value="entretien">Entretien</option>
+            <option value="refusée">Refusée</option>
+        </select>
+
+        <input type="date" id="dateRelance">
+        <input type="url" id="lien" placeholder="Lien de l'annonce (optionnel)">
+        <textarea id="notes" placeholder="Notes"></textarea>
+
+        <button type="submit">Enregistrer</button>
+        <button type="button" id="cancelBtn">Annuler</button>
+    </form>
+</section>
+
+<section id="cardsContainer"></section>
+
+<script src="script.js"></script>
+</body>
+</html>
